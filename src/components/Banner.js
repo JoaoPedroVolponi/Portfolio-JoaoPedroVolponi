@@ -4,7 +4,7 @@ import React from 'react';
 import Image from '../assets/avatar.svg';
 
 // Icons
-import {FaGithub, FaYoutube, FaDribbble, } from 'react-icons/fa'
+import {FaGithub, FaYoutube, FaDribbble, FaLinkedin, FaInstagram, } from 'react-icons/fa'
 
 //Type Animation
 import { TypeAnimation } from 'react-type-animation';
@@ -38,12 +38,12 @@ const Banner = () => {
                className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
                 <span className='text-white mr-4'> I am a </span>
                   <TypeAnimation sequence={[
-                    'Developer',
+                    'iOS Developer',
                     2000,
-                    'Design',
+                    'Front-end',
                     2000,
-                    'Youtuber',
-                    2000,
+                    // 'Youtuber',
+                    // 2000,
                   ]}
                   speed={50}
                   className='text-accent'
@@ -67,7 +67,7 @@ const Banner = () => {
                initial="hidden" whileInView={'show'} 
                viewport={{once: false, amount:0.7}}className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
                 <button className='btn btn-lg'> contact me </button>
-                  <a href='#' className='text-gradient btn-link'>
+                  <a href='https://github.com/JoaoPedroVolponi?tab=repositories'  target="_blank" className='text-gradient btn-link'>
                      My Portifolio
                   </a>
               </motion.div>
@@ -78,19 +78,19 @@ const Banner = () => {
                initial="hidden" whileInView={'show'} 
                viewport={{once: false, amount:0.7}}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'> 
-              { /* Youtube */}
-                <a href='#'> 
-                <FaYoutube />
+              { /* Linkedin */}
+                <a href='https://www.linkedin.com/in/joaopedrovolponi/' target="_blank"> 
+                <FaLinkedin />
                 </a>
 
                 { /* GitHub */}
-                <a href='#'> 
+                <a href='https://github.com/JoaoPedroVolponi' target="_blank"> 
                 <FaGithub />
                 </a>
 
-                { /* Dribble */}
-                <a href='#'> 
-                <FaDribbble />
+                { /* Instagram */}
+                <a href='https://www.instagram.com/joaovolponi/' target="_blank"> 
+                <FaInstagram />
                 </a>
               </motion.div>
 
