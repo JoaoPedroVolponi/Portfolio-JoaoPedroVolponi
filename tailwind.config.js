@@ -5,6 +5,9 @@ module.exports = {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
       tertiary: 'Aldrich',
+      quartinary: 'Zeyada',
+      quintary:'Chela One',
+      sextinary:'Oi',
     },
     container: {
       padding: {
@@ -23,7 +26,8 @@ module.exports = {
         accent: '#B809C3',
       },
       backgroundImage: {
-        site: "url('./assets/site-bg.jpg')",
+        // site: "url('./assets/site-bg.jpg')",
+        site: "url('./assets/testeBG.png')",
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
       },

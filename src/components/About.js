@@ -17,6 +17,13 @@ const About = () => {
     threshold: 0.5,
   });
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
@@ -36,15 +43,15 @@ const About = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1'>
-            <h2 className='h2 text-accent'> About me.</h2>
+              {/* h2 text-accent */}
+            <h2 className=' font-quintary text-[48px] text-[#406efd]'> Sobre.</h2> 
             <h3 className='h3 mb-4'>i`m a Freelancer Front-end Developer with over 5 years of
               experience
             </h3>
             <p className='mb-6'>
-              Lorem ipsum dolor sit, amet consectetur adipiscing elit. dolor
-              natus omnis inventore quas beatae illo nulla. Officiis magni
-              omnis
-              molestiais
+            • Estudante de Engenharia de Software (7/8) <br/>
+            • iOS Developer e apaixonado pelo Front-end
+           
             </p>
             { /* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -79,11 +86,11 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'> Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
+              <button className='btn btn-lg'  onClick={() => scrollToSection('contact')}> Contact me</button>
+              {/* <a href='#work' className='text-gradient btn-link'>
                 My Portfolio
-              </a>
-
+              </a> */}
+              <button className='text-gradient btn-link'  onClick={() => scrollToSection('work')}> My Portfolio</button>
             </div>
           </motion.div>
         </div>

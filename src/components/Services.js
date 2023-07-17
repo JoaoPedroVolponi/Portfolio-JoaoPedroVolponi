@@ -12,24 +12,24 @@ import { fadeIn } from '../variants'
 //services data
 const services = [
   {
-    name: 'UI/UX Design',
+    name: 'Ui / Ux',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry ',
     link: 'Lear more',
   },
   {
-    name: 'Development',
+    name: 'iOS Developer',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry ',
     link: 'Lear more',
   },
   {
-    name: 'Digital Marketing',
+    name: 'Front-end Developer',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry ',
     link: 'Lear more',
   },
   {
-    name: 'Product Branding',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry ',
-    link: 'Lear more',
+    name: '',
+    description: '',
+    link: '',
   },
 
 ]
@@ -46,12 +46,12 @@ const Services = () => {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 '>
-            <h2 className='h2 text-accent mb-6'> What I Do</h2>
+            <h2 className='h2 text-accent mb-6'> Skills</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
             i`m a Freelancer Front-end Developer with over 5 years of
               experience
             </h3>
-            <button className='btn btn-sm'> See my work</button>
+            <button className='btn btn-sm'> Meu Portfolio</button>
           </motion.div>
 
           {/* Services */}

@@ -4,20 +4,26 @@ import React from 'react';
 import Logo from '../assets/logo.svg'
 
 const Header = () => {
- return <header className='py-8'> 
-  <div className='container mx-auto'> 
-    <div className='flex justify-between items-center'>
-      { /* Logo */}
-      <a href='#'> 
-        <img src={Logo}  alt='' />
-      </a>
-      { /* Button */ }
-      <button className='btn btn-sm'> Work with me</button>
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  return <header className='py-8'>
+    <div className='container mx-auto'>
+      <div className='flex justify-between items-center'>
+        { /* Logo */}
+        <a href='#'>
+          <img src={Logo} alt='' />
+        </a>
+        { /* Button */}
+        <button className='btn btn-sm' onClick={() => scrollToSection('contact')}> Trabalhe comigo</button>
+      </div>
     </div>
-  </div>
- </header>
- 
- 
+  </header>
+
+
 };
 
 export default Header;
