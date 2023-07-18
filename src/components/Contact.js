@@ -88,7 +88,7 @@ const Contact = () => {
 
         <div className="flex flex-col items-center justify-center">
           <h4 className="text-xl uppercase text-accent font-quartinary font-medium mb-2 tracking-wide text-center">
-            João Volponi
+            João Pedro Volponi
           </h4>
           <h2 className="text-4xl lg:text-8xl leading-none mb-12 text-center">
             Vamos trabalhar <br /> juntos?

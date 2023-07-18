@@ -34,8 +34,8 @@ const Banner = () => {
               variants={fadeIn('right', 0.3)}
               initial="hidden" whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='text-[50px] font-quartinary leading-[0.8] lg:text-[100px]'>
-              JOÃO<span> VOLPONI</span>
+              className='text-[50px] font-quartinary font-bold leading-[0.8] lg:text-[77px]'>
+              JOÃO PEDRO<span> VOLPONI</span>
               </motion.h1>
 
               {/* <motion.h1
@@ -81,7 +81,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
 
               {/* <button className='btn btn-lg'> contact me </button>  */}
-              <button className='btn btn-lg' onClick={() => scrollToSection('work')}> Meu Portifolio </button>
+              <button className='btn btn-lg' onClick={() => scrollToSection('work')}> Meu Portfólio </button>
 
               {/* <a href='https://github.com/JoaoPedroVolponi?tab=repositories'  target="_blank" className='text-gradient btn-link'>
                      My Portifolio
@@ -108,7 +108,7 @@ const Banner = () => {
               </a>
 
               { /* Instagram */}
-              <a href='https://www.instagram.com/joaovolponi/' target="_blank">
+              <a href='https://www.instagram.com/joaopedrovolponi/' target="_blank">
                 <FaInstagram />
               </a>
             </motion.div>

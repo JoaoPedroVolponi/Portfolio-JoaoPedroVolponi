@@ -2,7 +2,8 @@ import React from 'react';
 
 // Images
 import Logo from '../assets/logo.svg'
-
+import logoJoao from '../assets/logoJoao.svg';
+import Component2 from '../assets/Component2.svg';
 const Header = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -15,10 +16,10 @@ const Header = () => {
       <div className='flex justify-between items-center'>
         { /* Logo */}
         <a href='#'>
-          <img src={Logo} alt='' />
+          <img src={logoJoao} alt='' />
         </a>
         { /* Button */}
-        <button className='btn btn-sm' onClick={() => scrollToSection('contact')}> Trabalhe comigo</button>
+        <button className='btn btn-sm' onClick={() => scrollToSection('contact')}> Contato</button>
       </div>
     </div>
   </header>

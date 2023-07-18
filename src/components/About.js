@@ -86,11 +86,11 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'  onClick={() => scrollToSection('contact')}> Contact me</button>
+              <button className='btn btn-lg'  onClick={() => scrollToSection('contact')}> Contato</button>
               {/* <a href='#work' className='text-gradient btn-link'>
                 My Portfolio
               </a> */}
-              <button className='text-gradient btn-link'  onClick={() => scrollToSection('work')}> My Portfolio</button>
+              <button className='text-gradient btn-link'  onClick={() => scrollToSection('work')}> Meu Portfólio</button>
             </div>
           </motion.div>
         </div>
