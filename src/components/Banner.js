@@ -2,7 +2,7 @@ import React from 'react';
 
 // Images
 import Image from '../assets/avatar.svg';
-
+import Avatar1 from '../assets/avatar1.jpg'
 // Icons
 import { FaGithub, FaLinkedin, FaInstagram, } from 'react-icons/fa'
 
@@ -14,6 +14,9 @@ import { motion } from 'framer-motion';
 
 //Variants
 import { fadeIn } from '../variants'
+
+// CV - PDF
+import { joaovolponiCV } from '../assets/pdf/joao-volponi-cv.pdf'
 
 const Banner = () => {
   const scrollToSection = (sectionId) => {
@@ -72,7 +75,7 @@ const Banner = () => {
               initial="hidden" whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry
+               Engenheiro de Software! (em BREVE)
             </motion.p>
 
             <motion.div
@@ -86,9 +89,9 @@ const Banner = () => {
               {/* <a href='https://github.com/JoaoPedroVolponi?tab=repositories'  target="_blank" className='text-gradient btn-link'>
                      My Portifolio
                   </a>  */}
-              <a className='text-gradient btn-link'> Dowload Cv</a>
+                   <a href='../assets/pdf/joao-volponi-cv.pdf' className='text-gradient btn-link'> Dowload Cv</a>
+              
             </motion.div>
-
 
 
             { /* Socials */}
@@ -120,7 +123,7 @@ const Banner = () => {
             variants={fadeIn('down', 0.5)}
             initial="hidden" whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }} className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-            <img src={Image} alt='' />
+            <img src={Avatar1} alt='' />
           </motion.div>
 
         </div>

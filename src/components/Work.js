@@ -27,12 +27,11 @@ const Work = () => {
             {/* text */}
             <div>
               <h2 className='h2 leading-tight text-accent'>
-                Meus ultimos <br />
+                Meus últimos <br />
                 Trabalhos.
               </h2>
-              <p className='max-w-sm mb-16'>Lorem ipsum dolor sit amet consectetur adipisicing elit
-                Repellat, hic! Harum quis, cum valit neque esse eos molestias
-                doloremque explicabo!
+              <p className='max-w-sm mb-16'>
+                Acesse todos os projetos clicando no botão v
               </p>
               {/* <button  className='btn btn-sm'> Ver todos os Projetos</button> */}
               <button className="btn btn-sm" onClick={() => window.open('https://github.com/JoaoPedroVolponi', '_blank')}>

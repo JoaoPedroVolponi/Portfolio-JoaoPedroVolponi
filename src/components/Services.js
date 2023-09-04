@@ -18,17 +18,17 @@ const services = [
   // },
   {
     name: 'iOS Developer',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry ',
+    description: 'Linguagem de Programação Swift (ViewCode, SwiftUI, StoryBoards e XIBs)',
     link: '',
   },
   {
     name: 'Front-end Developer',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry ',
+    description: 'Tailwind, StyleComponets',
     link: '',
   },
   {
     name: 'Ui / UX',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry ',
+    description: 'Prototipação e animações utilizando a ferramenta FIGMA',
     link: '',
   },
 
@@ -54,8 +54,7 @@ const Services = () => {
             className=''>
             <h2 className='h2 text-accent mb-6'> Skills</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              i`m a Freelancer Front-end Developer with over 5 years of
-              experience
+              Desenvolvedor Frontend (iOS Developer) com experiencia em Swift 
             </h3>
             <button className='btn btn-sm' onClick={() => scrollToSection('work')}> Meu Portfólio</button>
           </motion.div>
