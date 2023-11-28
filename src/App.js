@@ -7,22 +7,23 @@ import Services from './components/Services';
 import Work from './components/Work';
 import Contact from './components/Contact';
 
-import backgroundImageLight from '../src/assets/site-bg.jpg'; // Caminho da imagem de fundo para o modo claro
-import backgroundImageDark from '../src/assets/testeBG.png'; // Caminho da imagem de fundo para o modo noturno
+import backgroundImageLight from '../src/assets/site-bg.jpg';
+import backgroundImageDark from '../src/assets/testeBG.png';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [backgroundImage, setBackgroundImage] = useState(backgroundImageDark);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    setBackgroundImage(isDarkMode ? backgroundImageDark : backgroundImageLight);
+    const newIsDarkMode = !isDarkMode;
+    setIsDarkMode(newIsDarkMode);
+    setBackgroundImage(newIsDarkMode ? backgroundImageDark : backgroundImageLight);
   };
 
 
   return (
     <div className={`bg-site bg-no-repeat bg-cover overflow-hidden ${isDarkMode ? 'dark-mode' : ''}`} style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+      <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Banner />
       {/* <Nav /> */}
       <About />

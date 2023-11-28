@@ -20,7 +20,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
             <button
               onClick={() => navigateToSection("contact")}
               className="btn btn-lg"
-              style={{ marginRight: '30px' }}
+              style={{ marginRight: "30px" }}
             >
               Contato
             </button>
