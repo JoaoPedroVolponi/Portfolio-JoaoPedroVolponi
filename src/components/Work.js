@@ -19,7 +19,7 @@ const Work = () => {
         <div className='flex flex-col lg:flex-row gap-x-10'>
 
           <motion.div
-            variants={fadeIn('right', 0.3)}
+            variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
@@ -40,7 +40,7 @@ const Work = () => {
 
             {/* image1 */}
             <motion.div
-              variants={fadeIn('left', 0.3)}
+              variants={fadeIn('right', 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
@@ -66,7 +66,7 @@ const Work = () => {
 
           {/* image2 */}
           <motion.div
-            variants={fadeIn('right', 0.3)}
+            variants={fadeIn('down', 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
@@ -93,7 +93,7 @@ const Work = () => {
 
             {/* image3 */}
             <motion.div
-              variants={fadeIn('left', 0.3)}
+              variants={fadeIn('up', 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
