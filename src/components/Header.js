@@ -13,14 +13,14 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
     <header className="py-8">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <a href="#">
+          <a href="#">  
             <img src={logoJoao} alt="Logo" />
           </a>
           <div>
             <button
               onClick={() => navigateToSection("contact")}
               className="btn btn-lg"
-              style={{ marginRight: '30px' }}
+              style={{ marginRight: "30px" }}
             >
               Contato
             </button>
