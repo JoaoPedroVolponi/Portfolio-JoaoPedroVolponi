@@ -96,7 +96,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
 
               <button className='btn btn-lg' onClick={() => scrollToSection('work')}> Meu Portfólio </button>
-                   <a href={cv} download className='text-gradient btn-link'> Dowload Cv</a>
+                   <a href={cv} download className='text-gradient btn-link'> Download Cv</a>
             </motion.div>
 
 
