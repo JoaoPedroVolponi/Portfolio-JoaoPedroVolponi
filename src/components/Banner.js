@@ -1,33 +1,46 @@
 import React from 'react';
-
-// Images
-import Image from '../assets/avatar.svg';
-import Avatar1 from '../assets/avatar1.jpg'
-// Icons
-import { FaGithub, FaLinkedin, FaInstagram, } from 'react-icons/fa'
-
-//Type Animation
+import { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-
-//Motion
 import { motion } from 'framer-motion';
-
-//Variants
 import { fadeIn } from '../variants'
-
+import { FaGithub, FaLinkedin, FaInstagram, } from 'react-icons/fa'
+// Images
+import BannerMobile from '../assets/banner/home-mobile.png'
+import BannerDesktop from '../assets/banner/home-desktop.png'
 // CV - PDF
 import { joaovolponiCV } from '../assets/pdf/joao-volponi-cv.pdf'
 
+const scrollToSection = (sectionId) => {
+  const sectionElement = document.getElementById(sectionId);
+  if (sectionElement) {
+    sectionElement.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const Banner = () => {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); 
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize); 
+
+    return () => {
+      window.removeEventListener('resize', handleResize); 
+    };
+  }, []);
+
+  const backgroundImage = isMobile ? BannerMobile : BannerDesktop;
 
   return (
-    <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home' >
+    <section
+      className='min-h-[85vh] lg:min-h-[78vh] flex items-center'
+      id='home'
+      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       <div className='container mx-auto' >
         <div className='flex flex-col gapy-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
 
@@ -119,12 +132,12 @@ const Banner = () => {
           </div>
 
           {/* Image */}
-          <motion.div
+          {/* <motion.div
             variants={fadeIn('down', 0.5)}
             initial="hidden" whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }} className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
             <img src={Avatar1} alt='' />
-          </motion.div>
+          </motion.div> */}
 
         </div>
       </div>
