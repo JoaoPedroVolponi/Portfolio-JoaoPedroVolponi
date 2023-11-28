@@ -8,8 +8,7 @@ import { FaGithub, FaLinkedin, FaInstagram, } from 'react-icons/fa'
 import BannerMobile from '../assets/banner/home-mobile.png'
 import BannerDesktop from '../assets/banner/home-desktop.png'
 // CV - PDF
-import { joaovolponiCV } from '../assets/pdf/joao-volponi-cv.pdf'
-
+import cv from '../assets/pdf/CV.pdf'
 const scrollToSection = (sectionId) => {
   const sectionElement = document.getElementById(sectionId);
   if (sectionElement) {
@@ -88,7 +87,7 @@ const Banner = () => {
               initial="hidden" whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
-               Engenheiro de Software! (em BREVE)
+               Engenheiro de Software!
             </motion.p>
 
             <motion.div
@@ -96,14 +95,8 @@ const Banner = () => {
               initial="hidden" whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
 
-              {/* <button className='btn btn-lg'> contact me </button>  */}
               <button className='btn btn-lg' onClick={() => scrollToSection('work')}> Meu Portfólio </button>
-
-              {/* <a href='https://github.com/JoaoPedroVolponi?tab=repositories'  target="_blank" className='text-gradient btn-link'>
-                     My Portifolio
-                  </a>  */}
-                   <a href='../assets/pdf/joao-volponi-cv.pdf' className='text-gradient btn-link'> Dowload Cv</a>
-              
+                   <a href={cv} download className='text-gradient btn-link'> Dowload Cv</a>
             </motion.div>
 
 
