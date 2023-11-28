@@ -1,34 +1,22 @@
 import React from 'react';
-
-//icons
-import { BsArrowUpRight } from 'react-icons/bs';
-
-//motion
 import { motion } from 'framer-motion'
-
-//variants
 import { fadeIn } from '../variants'
 
-//services data
+
 const services = [
-  // {
-  //   name: 'iOS Developer',
-  //   description: 'Desenvolvedor iOS (Swift)',
-  //   link: 'Lear more',
-  // },
   {
-    name: 'iOS Developer',
-    description: 'Linguagem de Programação Swift (ViewCode, SwiftUI, StoryBoards e XIBs)',
+    name: 'Swift',
+    description: '• ViewCode, SwiftUI, StoryBoards e XIBs',
     link: '',
   },
   {
-    name: 'Front-end Developer',
-    description: 'Tailwind, StyleComponets',
+    name: 'React Native',
+    description: '• Typescript e Tailwind',
     link: '',
   },
   {
     name: 'Ui / UX',
-    description: 'Prototipação e animações utilizando a ferramenta FIGMA',
+    description: '• Design de Interfaces',
     link: '',
   },
 
@@ -52,9 +40,9 @@ const Services = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className=''>
-            <h2 className='h2 text-accent mb-6'> Skills</h2>
+            <h2 className='h2 leading-tight text-accent'> Skills</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              Desenvolvedor Frontend (iOS Developer) com experiencia em Swift 
+              Desenvolvedor Front-end Mobile 
             </h3>
             <button className='btn btn-sm' onClick={() => scrollToSection('work')}> Meu Portfólio</button>
           </motion.div>
@@ -84,9 +72,6 @@ const Services = () => {
                       </p>
                     </div>
                     <div className='flex flex-col flex-1 items-end'>
-                      {/* <a href='#' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
-                      <BsArrowUpRight />
-                    </a> */}
                       <a href='#' className='text-gradient text-sm'>
                         {link}
                       </a>

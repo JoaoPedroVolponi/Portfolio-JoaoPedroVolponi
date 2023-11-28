@@ -79,10 +79,11 @@ const About = () => {
               {" "}
               Sobre.
             </h2>
-            <h3 className="h3 mb-4">Estudante de Engenharia de Software,</h3>
+            <h3 className="h3 mb-4">Engenheiro de Software</h3>
             <h3 className="h3 mb-4">
-              Desenvolvedor Front-end com foco em iOS (Swift)
+              Desenvolvedor Front-end
             </h3>
+            <h3 className="h3 mb-4" >com foco em Mobile</h3>
             <p className="mb-6">
               {/* • Estudante de Engenharia de Software (7/8) <br/>
             • iOS Developer e apaixonado pelo Front-end */}
@@ -91,7 +92,7 @@ const About = () => {
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={2} durattion={5} /> : null}
+                  {inView ? <CountUp start={0} end={2} durattion={900} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Anos de <br />
@@ -100,7 +101,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} durattion={5} /> : null}
+                  {inView ? <CountUp start={0} end={5} durattion={900} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projetos <br />
@@ -109,7 +110,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={18} durattion={3} /> : null}
+                  {inView ? <CountUp start={0} end={10} durattion={300} /> : null}
                   +
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">

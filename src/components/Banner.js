@@ -88,7 +88,7 @@ const Banner = () => {
               initial="hidden" whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'>
-               Engenheiro de Software! (em BREVE)
+               Engenheiro de Software!
             </motion.p>
 
             <motion.div

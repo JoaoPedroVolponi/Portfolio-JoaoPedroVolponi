@@ -31,15 +31,11 @@ const Work = () => {
                 Trabalhos.
               </h2>
               <p className='max-w-sm mb-16'>
-                Acesse todos os projetos clicando no botão v
+                Acesse todos os projetos disponíveis no meu GitHub.
               </p>
-              {/* <button  className='btn btn-sm'> Ver todos os Projetos</button> */}
               <button className="btn btn-sm" onClick={() => window.open('https://github.com/JoaoPedroVolponi', '_blank')}>
                 Todos os Projetos!
               </button>
-
-
-
             </div>
 
             {/* image1 */}
